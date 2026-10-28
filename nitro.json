@@ -1,0 +1,19 @@
+{
+  "cxxNamespace": ["obitrain_healthconnect"],
+  "ios": {
+    "iosModuleName": "HealthConnect"
+  },
+  "android": {
+    "androidNamespace": ["obitrain", "healthconnect"],
+    "androidCxxLibName": "obitrain_healthconnect"
+  },
+  "autolinking": {
+    "HealthConnect": {
+      "android": {
+        "language": "kotlin",
+        "implementationClassName": "HealthConnect"
+      }
+    }
+  },
+  "ignorePaths": ["node_modules"]
+}

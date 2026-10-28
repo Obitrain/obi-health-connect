@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <queries>
+    <package android:name="com.google.android.apps.healthdata" />
+  </queries>
+
+  <application>
+    <!-- Android 13-: Health Connect's privacy policy link -->
+    <activity
+      android:name="com.margelo.nitro.obitrain.healthconnect.PermissionsRationaleActivity"
+      android:exported="true"
+      android:theme="@android:style/Theme.Translucent.NoTitleBar">
+      <intent-filter>
+        <action android:name="androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE" />
+      </intent-filter>
+    </activity>
+
+    <!-- Android 14+ -->
+    <activity-alias
+      android:name="com.margelo.nitro.obitrain.healthconnect.ViewPermissionUsageActivity"
+      android:exported="true"
+      android:permission="android.permission.START_VIEW_PERMISSION_USAGE"
+      android:targetActivity="com.margelo.nitro.obitrain.healthconnect.PermissionsRationaleActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW_PERMISSION_USAGE" />
+        <category android:name="android.intent.category.HEALTH_PERMISSIONS" />
+      </intent-filter>
+    </activity-alias>
+  </application>
+</manifest>

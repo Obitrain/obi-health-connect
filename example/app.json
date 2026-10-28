@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "HealthConnectExample",
+    "slug": "obi-health-connect-example",
+    "version": "1.0.0",
+    "platforms": ["android"],
+    "android": {
+      "package": "com.obitrain.healthconnect.example",
+      "allowBackup": false
+    },
+    "plugins": ["expo-dev-client", "./plugins/with-health-connect"]
+  }
+}
