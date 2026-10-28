@@ -1,6 +1,6 @@
 {
   "name": "@obitrain/react-native-health-connect",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Android Health Connect for React Native: Nitro module (Kotlin) for permissions, change-token reads and daily aggregates",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
